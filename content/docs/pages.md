@@ -54,7 +54,7 @@ Section lead:
 ---
 section_id: Getting Started
 nav_order: 3
-title: Install Git and GitHub Desktop
+title: Install Twine or Use Online
 ---
 ```
 
