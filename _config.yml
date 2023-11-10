@@ -16,7 +16,7 @@ title: Twine User Manual
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
-title-icon: Twine Logo.png
+title-icon: 
 # description appears in sidebar footer
 description: "Create interactive, nonlinear stories with Twine"
 # keywords for meta tags used by search engines
@@ -45,7 +45,7 @@ content_license_link: https://creativecommons.org/licenses/by-sa/4.0/
 # header-text-color: 
 # breadcrumbs-background: 
 # breadcrumbs-text-color: 
-active-nav-color: #0E4C92
+# active-nav-color: #0E4C92
 # link-color:
 # next-button-color:
 # text-color: 
