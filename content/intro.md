@@ -3,39 +3,34 @@ nav_order: 1
 title: Introduction
 ---
 
-Learn-Static Lesson Template is a Jekyll project to create a simple lesson or workshop website, with a [Bootstrap](https://getbootstrap.com/)-based theme, designed for hosting on [GitHub Pages](https://pages.github.com/).
+This guide is prepared for Twine 2.7.1.0 using Harlowe 3.3.7. It introduces Twine’s basic features, interface and terms. It will guide you through basic steps to create, edit, and play/publish a simple interactive story. You can check the resources that will help continue to learn under the section Learn More! 
 
-It features a sidebar navigation providing clear structure for step by step content.
-The sidebar nav supports pages nested into sections to help organize your lesson content. 
+These are some of the areas you can utilize Twine as a digital tool: 
 
-All content is written using basic Markdown, making it simple to write, edit, and reuse lesson materials.
+### Interactive Fiction or Choose Your Own Adventure Games
 
-To use Lesson Template to create your own website--> make a copy and replace the template content with your own!
+Twine is widely used for creating interactive fiction or text-based games where the reader/player makes choices that affect the outcome of the story. Twine is not limited to prose; it can be used to create interactive poetry where readers influence the progression and meaning of the poem.
 
-### Why?
+### Role-Playing Games (RPGs)
 
-Rather than making slides for a workshop, why not make a website? 
-It's easier to write, access, share, and reuse. 
-GitHub and GitHub Pages makes this relatively straightforward.
+Twine can be adapted for text-based RPGs, enabling game masters to guide players through a dynamic and responsive story.
+ 
+### Digital Storytelling
 
-Writing content in this simple, reuseable format makes for a better [Open Educational Resource](https://en.wikipedia.org/wiki/Open_educational_resources) since anyone can make a copy and adapt!
+It's a powerful tool for digital storytelling, allowing creators to incorporate multimedia elements such as images, audio, and video into their narratives
 
-## GitHub Pages 
+### Educational Material
 
-One amazingly useful GitHub feature is [GitHub Pages](https://guides.github.com/features/pages/).
-It provides free static web hosting from any repository.
-Gh-pages is intended to host relatively simple sites for your GitHub portfolio, project, or documentation.
-Because it is free and a valuable transferable skill, this is a great option for teaching and learning.
+Twine can be used to develop interactive educational content, quizzes, and tutorials, providing an engaging learning experience.
 
-Many organizations are using GitHub to collaboratively create and publish public workshop websites. 
-For example: 
+### Prototyping and Game Design
 
-- [Programming Historian](http://programminghistorian.org/)
-- [Software Carpentry](https://software-carpentry.org/), [Data Carpentry](http://www.datacarpentry.org/), [Library Carpentry](https://librarycarpentry.org/)
-- this site!
+Game developers often use Twine as a quick and effective tool for prototyping and designing game narratives before moving on to more complex game development environments.
 
-{% capture text %}Note:
-There are *soft* limits and guidelines for gh-pages usage: sites should be < 1GB, use < 100GB bandwidth per month, and make < 10 builds per hour.
-If your site exceeds these quotas, GitHub will send you a notice asking you to modify the repository.
-All content must follow the [community guidelines](https://help.github.com/articles/github-community-guidelines/), e.g. no violence, obscene sex, or illegal stuff.{% endcapture %}
+### Story Prototyping for Writers
+
+Writers and storytellers can use Twine to prototype and visualize different narrative structures, helping them experiment with plotlines and character interactions.
+
+{% capture text %}ARE YOU READY TO LEARN? GO TO THE [NEXT](https://ybalogluc.github.io/TwineToolGuide/content/start/prep.html) SECTION. LET’S GET STARTED.{% endcapture %}
 {% include alert.html text=text color=secondary %}
+
