@@ -51,12 +51,12 @@ Create Linked Passages: Double click on the newly appeared passages on the Story
 {% capture text %}You enter a garden with colorful flowers.
 `[[Explore the garden.|Explore Garden]]`
 {% endcapture %}
-{% include card.html text=text header="For `(Left Door)`"}
+{% include card.html text=text header="Left Door" %}
 
 {% capture text %}You find a dark cave.
 `[[Enter the cave.|Dark Cave]]`
 {% endcapture %}
-{% include card.html text=text header="For `(Right Door)`"}
+{% include card.html text=text header="Right Door" %}
 
 Here, the `(Go through the left Door)` and `(Right Door)` passages are linked to from the previous passage. The links take the reader to different parts of the story based on their choices.
 
