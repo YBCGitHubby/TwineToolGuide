@@ -23,11 +23,11 @@ Enter your initial content of your story into the passage editor.
 {% include figure.html img="Creating first passage.jpg" alt="First passage" caption="Use passage editor to enter your content." width="100%" %}
 
 #### STEP 3
-Add Links. Use double square brackets ([[ ]]) to create a link to another passage. 
+Add Links. Use double square brackets `([[ ]])` to create a link to another passage. 
 
 {% capture text %}You find yourself in a room with two doors.
-[[Go through the left door]]
-[[Go through the right door]]
+`[[Go through the left door]]`
+`[[Go through the right door]]`
 {% capture text %}
 
 The text "Go through the left door" and "Go through the right door" are clickable links that will lead to new passages when clicked. 
@@ -37,8 +37,8 @@ The text "Go through the left door" and "Go through the right door" are clickabl
 The pipe (|) can be used to rename the link.
 
 {% capture text %} You find yourself in a room with two doors.
-[[Go through the left door.|Left Door]]
-[[Go through the right door.|Right Door]]
+`[[Go through the left door.|Left Door]]`
+`[[Go through the right door.|Right Door]]`
 {% capture text %}
 
 In this example, "Go through the left door" and "Go through the right door" are clickable links. The text after the pipe (|) is the displayed link text, and the text before the pipe is the name of the passage to which the link leads.
@@ -49,12 +49,12 @@ In this example, "Go through the left door" and "Go through the right door" are 
 Create Linked Passages: Double click on the newly appeared passages on the Story Map to open the passage editor and enter:
 
 {% capture text %}You enter a garden with colorful flowers.
-[[Explore the garden.|Explore Garden]]
+`[[Explore the garden.|Explore Garden]]`
 {% endcapture %}
 {% include card.html text=text header="For (Left Door)"}
 
 {% capture text %}You find a dark cave.
-[[Enter the cave.|Dark Cave]]
+`[[Enter the cave.|Dark Cave]]`
 {% endcapture %}
 {% include card.html text=text header="For (Right Door)"}
 
@@ -65,25 +65,25 @@ Continue creating linked passages to build the branching structure of your narra
 For (Explore Garden)
 
 As you walk through the garden, you find a hidden treasure.
-[[Take the treasure.|Treasure]]
+`[[Take the treasure.|Treasure]]`
 
 For(Dark Cave)
 
 Inside the cave, you encounter a dragon.
-[[Confront the dragon.|Confront Dragon]]
+`[[Confront the dragon.|Confront Dragon]]`
 The link texts are customized for clarity, but the passage names remain distinct. Your can give the same name to different passages.
 STEP 6. Add Endings or Further Links: Conclude your story or provide further choices in linked passages.
 For (Treasure)
 
 Congratulations! You found the treasure and completed the adventure.
-[[Restart]]
+`[[Restart]]`
 
 For (Confront Dragon)
 
 The dragon breathes fire, and your journey comes to an end.
-[[Restart]]
+`[[Restart]]`
 In these examples, "Restart" is the displayed link text leading to the "Start" passage.
 STEP 7. Rename your starting passage as “Start” to link it to the last passage. Open the passge editor for the starting passage by double clicking on it. Then use Rename button to change the name of the passage. 
 IMAGE
-https://www.youtube.com/watch?v=dtNHIgcI2nY
+
 
