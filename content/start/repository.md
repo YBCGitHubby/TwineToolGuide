@@ -1,8 +1,8 @@
 ---
 section: Get Started
 nav_order: 2
-title: Create Project
-topics: Template; Basic Config
+title: Twine Dictionary
+topics: Basic consepts; Features
 ---
 
 The [lesson-template repository](https://github.com/learn-static/lesson-template) is a template project --> to get started quickly, make a copy and replace the demo with your own content and customizations.
