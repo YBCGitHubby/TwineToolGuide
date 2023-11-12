@@ -75,19 +75,21 @@ The link texts are customized for clarity, but the passage names remain distinct
 
 #### STEP 6
 Add Endings or Further Links: Conclude your story or provide further choices in linked passages.
-For `(Treasure)`
+`Treasure`
 
 Congratulations! You found the treasure and completed the adventure.
 `[[Restart]]`
 
-For `(Confront Dragon)`
+`Confront Dragon`
 
 The dragon breathes fire, and your journey comes to an end.
 `[[Restart]]`
-In these examples, "Restart" is the displayed link text leading to the "Start" passage.
+
+In these examples, `Restart` is the displayed link text leading to the `Start` passage.
 
 #### STEP 7
 Rename your starting passage as “Start” to link it to the last passage. Open the passge editor for the starting passage by double clicking on it. Then use Rename button to change the name of the passage. 
+
 IMAGE
 
 
