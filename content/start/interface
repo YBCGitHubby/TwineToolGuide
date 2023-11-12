@@ -1,0 +1,18 @@
+---
+section: Get Started
+nav_order: 3
+title: Twine Interface
+topics: Toolbar; Tabs; Buttons
+---
+
+Use Story Tab to create a new story, Edit, tag, rename, and delete existing stories. 
+IMAGE
+Library Tab shows all your stories. You can use this tab to import archived or published stories or Twee source files into Twine. You can also archive your stories to have back-up files.
+IMAGE
+Build Tab is for testing, playing, and publishing your stories. 
+IMAGE
+View tab is for sorting (last update or title) and filtering (with tags) your stories.
+IMAGE
+You can use Twine Tab to customize how Twine works (Preferences), to choose Story Formats, or to report bugs. 
+IMAGE
+
