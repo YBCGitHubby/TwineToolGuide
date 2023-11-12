@@ -1,69 +1,89 @@
 ---
 section_id: Create Content
 nav_order: 3
-title: Page Set Up
-topics: Front Matter; Navigation
+title: Create Your First Story
+topics: New Story; Passages; Links; Basic Syntax
 ---
 
-Content pages are written in markdown and can be enhanced using Liquid includes that are packaged with the template.
-Start by editing the examples or creating new files in the "content" folder.
+{% include video-embed.html youtubeid="moJgWrD6dwgdtNHIgcI2nY" caption="Create a Basic Story with Twine" %}
 
-Each content page will be one file inside the "content" folder of your project.
-The page *stubs* have the extension `.md` (meaning Markdown) and can be organized further into folders inside the "content" folder if desired.
+#### STEP 1
+Open Twine and click +New button under Story tab. Enter a name for your story. Click Create button.
 
-## Front Matter
+{% include figure.html img="Create a new story.jpg" alt="New Story" caption="Click +New and name your story!" width="100%" %}
 
-Each content page requires "YAML front matter" at the top of the file.
-This information is used to configure the page and navigation added to the site's sidebar.
+#### STEP 2
+Once you create your story, Twine will open the Story Map screen to create passages and links. Every new story starts with a single passage which appears on the Story Map as a square with a green rocket icon attached to it. When you double click on it, Twine opens a dialogue box to edit the passage.
 
-Use these values:
+Enter your initial content of your story into the passage editor. 
 
-- `title:` (required) value will appear as the H1 header at the top of the page and in navigation links. 
-- `nav:` use nav only if you would like a value different than the title to appear in the sidebar navigation (optional, this can be helpful if you want to use a shorter title in the nav).
-- `topics:` will appear as a small feature below the title (optional). These can serve as keywords to help your readers understand the focus of the section.
-- `description:` will appear as an indented text block below the title (optional). This gives you a chance to summarize the section contents. 
-- `youtubeid:` will add an YouTube video embed (optional). Find the id in the YouTube link. For example, in `https://youtu.be/moJgWrD6dwg` or `https://www.youtube.com/watch?v=moJgWrD6dwg` the youtubeid is `moJgWrD6dwg`.
-- Alternatively, if you don't want these features to appear on the page, you can over ride the layout by adding `layout:`  with the option `sidebar`, `page`, or `default`.
+{% capture text %}You find yourself in a room with two doors.
+{% endcapture %}
 
-The sidebar navigation is set up using further front matter values following these rules:
+{% include figure.html img="Creating first passage.jpg" alt="First passage" caption="Use passage editor to enter your content." width="100%" %}
 
-- **Individual listing:** To list a page in the nav individually, add `nav_order` to the front matter of a content page. e.g. `nav_order: 1`. Do *not* include `section_id` or `section` in the front matter.
-- **Section dropdown:** To create a "section" drop down, on the first content page of the section, add `nav_order` and `section_id` to the front matter. The value of `section_id` will be displayed as the label for the section drop down. e.g. `section_id: Workshop Prep`. The page's title will be listed as the first item in the section dropdown.
-- **Section pages:** To add additional pages to the section dropdown, add `section` and `nav_order` to the front matter of a markdown file. The value of `section` must match a `section_id` set up on another markdown file. The page's title will appear under the corresponding section dropdown. The pages in the section will sort according to `nav_order` within the section--however, the page that sets up the section (with `section_id`) will always be listed first. 
+#### STEP 3
+Add Links. Use double square brackets ([[ ]]) to create a link to another passage. 
 
-Note: 
+{% capture text %}You find yourself in a room with two doors.
+[[Go through the left door]]
+[[Go through the right door]]
+{% capture text %}
 
-- The nav listings (individual pages and sections) will be sorted by the value of `nav_order`.
-- If a markdown stub does not have `nav_order` *or* `section` in the front matter, the page will **not** appear anywhere in the navigation. Occasionally you might want to create pages that aren't linked in the nav, just be sure to link to them from somewhere else!
-- The values of `section_id` / `section` should be unique. If you create multiple sections with the same name, the nav won't work as expected!
+The text "Go through the left door" and "Go through the right door" are clickable links that will lead to new passages when clicked. 
 
-### Example Front Matter
+{% include figure.html img="Creating passage 02.jpg" alt="Add Links" width="100%" %}
 
-Individual listing:
+The pipe (|) can be used to rename the link.
 
-```
----
-nav_order: 1
-title: Introduction
----
-```
+{% capture text %} You find yourself in a room with two doors.
+[[Go through the left door.|Left Door]]
+[[Go through the right door.|Right Door]]
+{% capture text %}
 
-Section lead:
+In this example, "Go through the left door" and "Go through the right door" are clickable links. The text after the pipe (|) is the displayed link text, and the text before the pipe is the name of the passage to which the link leads.
 
-```
----
-section_id: Getting Started
-nav_order: 3
-title: Install Twine or Use Online
----
-```
+{% include figure.html img="Creating passage-pipe.jpg" alt="Rename links" width="100%" %}
 
-Section content:
+#### STEP 4 
+Create Linked Passages: Double click on the newly appeared passages on the Story Map to open the passage editor and enter:
 
-```
----
-section: Getting Started
-nav_order: 2
-title: Configure Git
----
-```
+{% capture text %}You enter a garden with colorful flowers.
+[[Explore the garden.|Explore Garden]]
+{% endcapture %}
+{% include card.html text=text header="For (Left Door)"}
+
+{% capture text %}You find a dark cave.
+[[Enter the cave.|Dark Cave]]
+{% endcapture %}
+{% include card.html text=text header="For (Right Door)"}
+
+Here, the "(Go through the left Door)" and "(Right Door)" passages are linked to from the previous passage. The links take the reader to different parts of the story based on their choices.
+
+#### STEP 5
+Continue creating linked passages to build the branching structure of your narrative.
+For (Explore Garden)
+
+As you walk through the garden, you find a hidden treasure.
+[[Take the treasure.|Treasure]]
+
+For(Dark Cave)
+
+Inside the cave, you encounter a dragon.
+[[Confront the dragon.|Confront Dragon]]
+The link texts are customized for clarity, but the passage names remain distinct. Your can give the same name to different passages.
+STEP 6. Add Endings or Further Links: Conclude your story or provide further choices in linked passages.
+For (Treasure)
+
+Congratulations! You found the treasure and completed the adventure.
+[[Restart]]
+
+For (Confront Dragon)
+
+The dragon breathes fire, and your journey comes to an end.
+[[Restart]]
+In these examples, "Restart" is the displayed link text leading to the "Start" passage.
+STEP 7. Rename your starting passage as “Start” to link it to the last passage. Open the passge editor for the starting passage by double clicking on it. Then use Rename button to change the name of the passage. 
+IMAGE
+https://www.youtube.com/watch?v=dtNHIgcI2nY
+
