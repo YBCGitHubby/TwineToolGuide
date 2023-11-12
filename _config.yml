@@ -11,14 +11,14 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: Twine User Manual
+title: A Beginner's Guide to Twine
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
 title-icon: 
 # description appears in sidebar footer
-description: "Create interactive, nonlinear stories with Twine"
+description: "Create your first interactive, nonlinear story with Twine"
 # keywords for meta tags used by search engines
 keywords: "Twine, interactive games, branching narratives, nonlinear stories"
 # image for meta tags, will appear when sharing link on social media
