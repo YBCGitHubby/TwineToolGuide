@@ -1,4 +1,4 @@
-
+---
 section_id: Create Content
 nav_order: 3
 title: Create Your First Story
