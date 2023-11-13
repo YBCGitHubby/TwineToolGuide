@@ -96,7 +96,7 @@ In these examples, `Restart` is the displayed link text leading to the `Start` p
 #### STEP 7
 Rename your starting passage as `Adventure begins` to link it to the last passage. Open the passage editor for the starting passage by double clicking on it. Then use `Rename` button to change the name of the passage. 
 
-{% include figure.html img="RenamePassage.jpg" alt="A complete story" width="100%" %}
+{% include figure.html img="RenamePassage.jpg" alt="Rename a passage" width="100%" %}
 
 Let's link the last passage to the first passage and complete your first story! Open the passage editor for `Restart`.
 
