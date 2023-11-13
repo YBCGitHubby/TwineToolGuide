@@ -15,7 +15,7 @@ Open Twine and click +New button under Story tab. Enter a name for your story. C
 Once you create your story, Twine will open the Story Map screen to create passages and links. Every new story starts with a single passage which appears on the Story Map as a square with a green rocket icon attached to it. When you double click on it, Twine opens a dialogue box to edit the passage.
 
 {% capture text %}
-You find yourself in a room with two doors.
+`You find yourself in a room with two doors.`
 {% endcapture %}
 {% include card.html text=text header="Enter your initial content of your story into the passage editor." title="" %}
 
@@ -42,7 +42,23 @@ You find yourself in a room with two doors.
 `[[Go through the left door.|Left Door]]`
 `[[Go through the right door.|Right Door]]`
 {% endcapture %}
+{% include card.html text=text header="Enter" title="" %}
 
 In this example, "Go through the left door" and "Go through the right door" are clickable links. The text after the pipe `(|)` is the displayed link text, and the text before the pipe is the name of the passage to which the link leads.
 
 {% include figure.html img="Creating passage-pipe.jpg" alt="Rename links" width="100%" %}
+
+#### STEP 4 
+Create Linked Passages | Double click on the newly appeared passages on the Story Map to open the passage editor. 
+
+{% capture text %}You enter a garden with colorful flowers.
+`[[Explore the garden.|Explore Garden]]`
+{% endcapture %}
+{% include card.html text=text header="Enter for Left Door" title="" %}
+
+{% capture text %}You find a dark cave.
+`[[Enter the cave.|Dark Cave]]`
+{% endcapture %}
+{% include card.html text=text header="Enter for Right Door" title="" %}
+
+Here, the `(Go through the left Door)` and `(Right Door)` passages are linked to from the previous passage. The links take the reader to different parts of the story based on their choices.
