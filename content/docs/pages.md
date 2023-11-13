@@ -48,15 +48,17 @@ In this example, "Go through the left door" and "Go through the right door" are 
 #### STEP 4 
 Create Linked Passages: Double click on the newly appeared passages on the Story Map to open the passage editor and enter:
 
-{% capture text %}You enter a garden with colorful flowers.
-`[[Explore the garden.|Explore Garden]]`
+{% capture left_door_text %}
+  You enter a garden with colorful flowers.
+  `[[Explore the garden.|Explore Garden]]`
 {% endcapture %}
-{% include card.html text=text header="Left Door" %}
+{% include card.html text=left_door_text header="Left Door" %}
 
-{% capture text %}You find a dark cave.
-`[[Enter the cave.|Dark Cave]]`
+{% capture right_door_text %}
+  You find a dark cave.
+  `[[Enter the cave.|Dark Cave]]`
 {% endcapture %}
-{% include card.html text=text header="Right Door" %}
+{% include card.html text=right_door_text header="Right Door" %}
 
 Here, the `(Go through the left Door)` and `(Right Door)` passages are linked to from the previous passage. The links take the reader to different parts of the story based on their choices.
 
@@ -67,11 +69,11 @@ For `(Explore Garden)`
 As you walk through the garden, you find a hidden treasure.
 `[[Take the treasure.|Treasure]]`
 
-For`(Dark Cave)`
+For `(Dark Cave)`
 
 Inside the cave, you encounter a dragon.
 `[[Confront the dragon.|Confront Dragon]]`
-The link texts are customized for clarity, but the passage names remain distinct. Your can give the same name to different passages.
+The link texts are customized for clarity, but the passage names remain distinct. You can give the same name to different passages.
 
 #### STEP 6
 Add Endings or Further Links: Conclude your story or provide further choices in linked passages.
@@ -88,8 +90,4 @@ The dragon breathes fire, and your journey comes to an end.
 In these examples, `Restart` is the displayed link text leading to the `Start` passage.
 
 #### STEP 7
-Rename your starting passage as “Start” to link it to the last passage. Open the passge editor for the starting passage by double clicking on it. Then use Rename button to change the name of the passage. 
-
-IMAGE
-
-
+Rename your starting passage as “Start” to link it to the last passage. Open the passage editor for the starting passage by double-clicking on it. Then use the Rename button to change the name of the passage.
