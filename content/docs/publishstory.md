@@ -1,6 +1,6 @@
 ---
 section_id: Create Content
-nav_order: 3
+nav_order: 2
 title: Play & Publish a Story
 topics: Test; Play; Share
 ---
