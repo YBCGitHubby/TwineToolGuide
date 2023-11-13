@@ -23,7 +23,7 @@ It's a powerful tool for digital storytelling, allowing creators to incorporate 
 
 Twine can be used to develop interactive educational content, quizzes, and tutorials, providing an engaging learning experience.
 
-### Prototyping and Game Design
+### Game Design
 
 Game developers often use Twine as a quick and effective tool for prototyping and designing game narratives before moving on to more complex game development environments.
 
