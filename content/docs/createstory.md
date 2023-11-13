@@ -1,4 +1,4 @@
-dcapture---
+
 section_id: Create Content
 nav_order: 3
 title: Create Your First Story
@@ -28,3 +28,14 @@ Add Links. Use double square brackets `([[ ]])` to create a link to another pass
 The text "Go through the left door" and "Go through the right door" are clickable links that will lead to new passages when clicked. 
 
 {% include figure.html img="Creating passage 02.jpg" alt="Add Links" width="100%" %}
+
+The pipe `(|)` can be used to rename the link.
+
+{% capture text %} You find yourself in a room with two doors.
+`[[Go through the left door.|Left Door]]`
+`[[Go through the right door.|Right Door]]`
+{% endcapture %}
+
+In this example, "Go through the left door" and "Go through the right door" are clickable links. The text after the pipe `(|)` is the displayed link text, and the text before the pipe is the name of the passage to which the link leads.
+
+{% include figure.html img="Creating passage-pipe.jpg" alt="Rename links" width="100%" %}
