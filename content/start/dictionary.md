@@ -24,7 +24,7 @@ Library is the collection of stories stored in Twine. Your library is private an
 
 Story Map is the visual representation of the structure and flow of a story in Twine. It is a checkered canvas where each passage in it is represented by a card, and links between them are shown as lines with arrows. You can zoom in and out of the map using the three buttons on the corner of the Story Map screen. 
 
-{% include figure.html img="01.Zoom.jpg" alt="Stary Map Zoom icons" width="75%" %}
+{% include figure.html img="Zoom.jpg" alt="Stary Map Zoom icons" width="100%" %}
 
 #### Story Format 
 
