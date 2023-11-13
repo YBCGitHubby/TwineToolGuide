@@ -1,18 +1,27 @@
 ---
-title: Lesson Template
+title: Ready to Learn Twine!
 layout: lesson-content
 ---
 
-A minimal Jekyll theme with sidebar content nav for creating lesson and workshop websites using Markdown.
+Twine is a free and open-source digital tool for creating interactive, nonlinear stories or choose-your-own adventure games using hypertext. Enabling the creation of narratives through intuitive hyperlinks, Twine allows readers to navigate decision points, clicking through diverse scenarios that shape distinct outcomes. 
 
-{% include figure.html img="uidaho-workshop.jpg" alt="intro image here" caption="Library workshop" width="75%" %}
+Knowledge of coding is not necessary to create stories with Twine. However, knowledge of HTML, CSS, and JavaScript can help create more complicated ones. 
 
-*Add your workshop abstract here!*
+Whether you're a storyteller, educator, or game enthusiast, Twine provides an intuitive space for unleashing your creative potential.
 
-Learn how to create a super quick easy website for a workshop by writing a few markdown files! 
-Host it for free on GitHub with gh-pages, and share!
-Fun!
+Need some inspiration before learning how to create your own story/game with Twine. 
 
-{% include toc.html %}
+Check out these Twine Games:
 
-{% include template/credits.html %}
+[[Choice Texas]](http://playchoicetexas.com/)
+
+[[Depression Quest]](http://playchoicetexas.com/)
+
+[[Queers in Love at the End of the World]](https://w.itch.io/end-of-the-world)
+
+[[My Father’s Long Long Legs]](https://ztul.itch.io/mflll)
+
+[[Using the UT Libraries]](https://dols2022.netlify.app/) 
+
+[[Manage your Research: EndNote, Zotero and More]](https://philome.la/uglibrary/manageyourresearch/play/index.html)
+
