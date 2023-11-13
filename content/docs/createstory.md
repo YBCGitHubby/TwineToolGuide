@@ -62,3 +62,49 @@ Create Linked Passages | Double click on the newly appeared passages on the Stor
 {% include card.html text=text header="Enter for Right Door" title="" %}
 
 Here, the `(Go through the left Door)` and `(Right Door)` passages are linked to from the previous passage. The links take the reader to different parts of the story based on their choices.
+
+#### STEP 5
+Continue creating linked passages to build the branching structure of your narrative.
+
+{% capture text %}As you walk through the garden, you find a hidden treasure.
+`[[Take the treasure.|Treasure]]`
+{% endcapture %}
+{% include card.html text=text header="Enter for Explore Garden" title="" %}
+
+{% capture text %}Inside the cave, you encounter a dragon.
+`[[Confront the dragon.|Confront Dragon]]`
+{% endcapture %}
+{% include card.html text=text header="Enter for Dark Cave" title="" %}
+
+The link texts are customized for clarity, but the passage names remain distinct. Your can give the same name to different passages.
+
+#### STEP 6
+Add Endings or Further Links | Conclude your story or provide further choices in linked passages.
+
+{% capture text %}Congratulations! You found the treasure and completed the adventure.
+`[[Restart]]`
+{% endcapture %}
+{% include card.html text=text header="Enter for Treasure" title="" %}
+
+{% capture text %}The dragon breathes fire, and your journey comes to an end.
+`[[Restart]]`
+{% endcapture %}
+{% include card.html text=text header="Enter for Confront Dragon" title="" %}
+
+In these examples, `Restart` is the displayed link text leading to the `Start` passage.
+
+#### STEP 7
+Rename your starting passage as `Adventure begins` to link it to the last passage. Open the passage editor for the starting passage by double clicking on it. Then use `Rename` button to change the name of the passage. 
+
+{% include figure.html img="RenamePassage.jpg" alt="A complete story" width="100%" %}
+
+Let's link the last passage to the first passage and complete your first story! Open the passage editor for `Restart`.
+
+{% capture text %}
+`[[Adventure begins]]`
+{% endcapture %}
+{% include card.html text=text header="Enter" title="" %}
+
+{% include figure.html img="AllPassages.jpg" alt="A complete story" width="100%" %}
+
+{% include alert.html text="Congragulations! You created your first story/game with Twine. Let's [[play]](https://ybalogluc.github.io/TwineToolGuide/content/docs/publishstory.html)" align="center" color="success" %}
