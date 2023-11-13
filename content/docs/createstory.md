@@ -1,4 +1,4 @@
----
+dcapture---
 section_id: Create Content
 nav_order: 3
 title: Create Your First Story
@@ -23,7 +23,7 @@ Add Links. Use double square brackets `([[ ]])` to create a link to another pass
 {% capture text %}You find yourself in a room with two doors.
 `[[Go through the left door]]`
 `[[Go through the right door]]`
-{% capture text %}
+{% endcapture %}
 
 The text "Go through the left door" and "Go through the right door" are clickable links that will lead to new passages when clicked. 
 
