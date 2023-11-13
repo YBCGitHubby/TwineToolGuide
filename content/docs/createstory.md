@@ -25,6 +25,7 @@ You find yourself in a room with two doors.
 `[[Go through the left door]]`
 `[[Go through the right door]]`
 {% endcapture %}
+{% include card.html text=text header="Enter" title="..." %}
 
 The text "Go through the left door" and "Go through the right door" are clickable links that will lead to new passages when clicked. 
 
