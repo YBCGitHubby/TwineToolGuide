@@ -14,7 +14,12 @@ Open Twine and click +New button under Story tab. Enter a name for your story. C
 #### STEP 2
 Once you create your story, Twine will open the Story Map screen to create passages and links. Every new story starts with a single passage which appears on the Story Map as a square with a green rocket icon attached to it. When you double click on it, Twine opens a dialogue box to edit the passage.
 
-Enter your initial content of your story into the passage editor. 
+{% capture text %}
+You find yourself in a room with two doors.
+{% endcapture %}
+{% include card.html text=text header="Enter your initial content of your story into the passage editor." title="" %}
+
+{% include figure.html img="Creating first passage.jpg" alt="First passage" caption="Story Map and Passage Editor" width="100%" %}
 
 #### STEP 3
 Add Links. Use double square brackets `([[ ]])` to create a link to another passage. 
@@ -24,7 +29,7 @@ You find yourself in a room with two doors.
 `[[Go through the left door]]`
 `[[Go through the right door]]`
 {% endcapture %}
-{% include card.html text=text header="Enter" title="..." %}
+{% include card.html text=text header="Enter" title="" %}
 
 The text "Go through the left door" and "Go through the right door" are clickable links that will lead to new passages when clicked. 
 
