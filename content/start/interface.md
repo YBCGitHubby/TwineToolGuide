@@ -17,7 +17,7 @@ Use `Story Tab` to create a new story, edit, tag, rename, and delete existing st
 
 {% include figure.html img="Interface-Build.jpg" alt="Build Tab" caption="Play and publish your stories here!" width="100%" %}
 
-View tab` is for sorting (last update or title) and filtering (with tags) your stories.
+`View tab` is for sorting (last update or title) and filtering (with tags) your stories.
 
 {% include figure.html img="Interface-View.jpg" alt="View Tab" caption="Sort and filter your stories here!" width="100%" %}
 
