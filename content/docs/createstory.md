@@ -20,7 +20,8 @@ Enter your initial content of your story into the passage editor.
 #### STEP 3
 Add Links. Use double square brackets `([[ ]])` to create a link to another passage. 
 
-{% capture text %}You find yourself in a room with two doors.
+{% capture text %}
+You find yourself in a room with two doors.
 `[[Go through the left door]]`
 `[[Go through the right door]]`
 {% endcapture %}
@@ -31,7 +32,8 @@ The text "Go through the left door" and "Go through the right door" are clickabl
 
 The pipe `(|)` can be used to rename the link.
 
-{% capture text %} You find yourself in a room with two doors.
+{% capture text %} 
+You find yourself in a room with two doors.
 `[[Go through the left door.|Left Door]]`
 `[[Go through the right door.|Right Door]]`
 {% endcapture %}
